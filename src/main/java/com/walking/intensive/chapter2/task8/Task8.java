@@ -13,7 +13,7 @@ public class Task8 {
     static double getHappyTicketChance() {
         double quantity = 0;
         for (int i = 0; i <= 27; ++i) {
-            quantity = quantity + Math.pow(getQuantityHappyTicket(i), 2);
+            quantity += Math.pow(getQuantityHappyTicket(i), 2);
         }
         return quantity / 1000000 ;
     }
