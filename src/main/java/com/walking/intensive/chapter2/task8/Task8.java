@@ -15,14 +15,14 @@ public class Task8 {
         for (int i = 0; i <= 27; ++i) {
             quantity += Math.pow(getQuantityHappyTicket(i), 2);
         }
-        return quantity / 1000000 ;
+        return quantity / 1000000;
     }
 
-    static int getQuantityHappyTicket(int validation) {
+    static int getQuantityHappyTicket(int verificationSum) {
         int check = 0, sum = 0;
         for (int i = 0; i <= 999; ++i) {
             sum = i / 100 + (i / 10 % 10) + i % 10;
-            if (sum == validation) {
+            if (sum == verificationSum) {
                 ++check;
             }
         }
